@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "applicationType": "monolith",
+    "gitCompany": "",
+    "baseName": "Novelas",
+    "packageName": "com.cnote.novelas",
+    "packageFolder": "com/cnote/novelas",
+    "serverPort": 8080,
+    "serviceDiscoveryType": false,
+    "authenticationType": "jwt",
+    "uaaBaseName": "../uaa",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "enableSwaggerCodegen": false,
+    "messageBroker": false,
+    "buildTool": "gradle",
+    "useSass": false,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "fr",
+      "es",
+      "en"
+    ],
+    "clientFramework": "react",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "5.8.1",
+    "jwtSecretKey": "NzI5MTYzNThmNjI1M2Q2YWM4YmRiMDRjMDBkZGVjZDkxZmVlODRmYWMwMmRlMzllODM2NGY3YzIzN2YwZTdmYWQzY2NiMjBmM2NmZGE0NjRmYmFlZDhhOWIwNWYwNGRhOWFkZWYzOWViZjAxYmQ4MmI0ZWExYzQwNzA3OWFhMTU=",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": []
+  },
+  "git-provider": "GitHub",
+  "git-company": "DevAnthony",
+  "repository-name": "telenovelas"
+}
