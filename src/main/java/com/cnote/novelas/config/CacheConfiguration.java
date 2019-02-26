@@ -38,6 +38,14 @@ public class CacheConfiguration {
             cm.createCache(com.cnote.novelas.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(com.cnote.novelas.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.cnote.novelas.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Telenovela.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Telenovela.class.getName() + ".episodes", jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Telenovela.class.getName() + ".actors", jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Episode.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Episode.class.getName() + ".actors", jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Actor.class.getName(), jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Actor.class.getName() + ".telenovelas", jcacheConfiguration);
+            cm.createCache(com.cnote.novelas.domain.Actor.class.getName() + ".episodes", jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

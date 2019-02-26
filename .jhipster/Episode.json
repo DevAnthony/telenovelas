@@ -1,0 +1,63 @@
+{
+    "name": "Episode",
+    "fields": [
+        {
+            "fieldName": "number",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rating",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "downloadlink",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 2048
+        },
+        {
+            "fieldName": "streaminglink",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 2048
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityRelationshipName": "episode",
+            "relationshipName": "actor",
+            "otherEntityName": "actor",
+            "otherEntityField": "name",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "telenovela",
+            "otherEntityName": "telenovela",
+            "otherEntityField": "id",
+            "otherEntityRelationshipName": "episode"
+        }
+    ],
+    "changelogDate": "20190226181411",
+    "javadoc": "Episode entity.\n@author CNote.",
+    "entityTableName": "episode",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

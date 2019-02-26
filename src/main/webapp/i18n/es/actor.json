@@ -1,0 +1,27 @@
+{
+  "novelasApp": {
+    "actor": {
+      "home": {
+        "title": "Actors",
+        "createLabel": "Crear nuevo Actor",
+        "createOrEditLabel": "Crear o editar Actor"
+      },
+      "created": "Un nuevo Actor ha sido creado con el identificador {{ param }}",
+      "updated": "Un Actor ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Actor ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Actor {{ id }}?"
+      },
+      "detail": {
+        "title": "Actor"
+      },
+      "firstname": "Firstname",
+      "middlename": "Middlename",
+      "lastname": "Lastname",
+      "profilepicture": "Profilepicture",
+      "biolink": "Biolink",
+      "telenovela": "Telenovela",
+      "episode": "Episode"
+    }
+  }
+}

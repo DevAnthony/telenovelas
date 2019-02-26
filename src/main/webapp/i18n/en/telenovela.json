@@ -1,0 +1,31 @@
+{
+  "novelasApp": {
+    "telenovela": {
+      "home": {
+        "title": "Telenovelas",
+        "createLabel": "Create a new Telenovela",
+        "createOrEditLabel": "Create or edit a Telenovela"
+      },
+      "created": "A new Telenovela is created with identifier {{ param }}",
+      "updated": "A Telenovela is updated with identifier {{ param }}",
+      "deleted": "A Telenovela is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Telenovela {{ id }}?"
+      },
+      "detail": {
+        "title": "Telenovela"
+      },
+      "title": "Title",
+      "summary": "Summary",
+      "rating": "Rating",
+      "year": "Year",
+      "country": "Country",
+      "playlist": "Playlist",
+      "thumbnail": "Thumbnail",
+      "poster": "Poster",
+      "background": "Background",
+      "episode": "Episode",
+      "actor": "Actor"
+    }
+  }
+}

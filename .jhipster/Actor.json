@@ -1,0 +1,65 @@
+{
+    "name": "Actor",
+    "fields": [
+        {
+            "fieldName": "firstname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "middlename",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "profilepicture",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 2048
+        },
+        {
+            "fieldName": "biolink",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": 2048
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "telenovela",
+            "otherEntityName": "telenovela",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "actor"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "relationshipName": "episode",
+            "otherEntityName": "episode",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "actor"
+        }
+    ],
+    "changelogDate": "20190226181412",
+    "javadoc": "Actor entity.\n@author CNote.",
+    "entityTableName": "actor",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

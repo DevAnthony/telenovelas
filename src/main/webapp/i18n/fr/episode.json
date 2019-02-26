@@ -1,0 +1,27 @@
+{
+  "novelasApp": {
+    "episode": {
+      "home": {
+        "title": "Episodes",
+        "createLabel": "Créer un nouveau Episode",
+        "createOrEditLabel": "Créer ou éditer un Episode"
+      },
+      "created": "Un nouveau Episode a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Episode avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Episode avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Episode {{ id }} ?"
+      },
+      "detail": {
+        "title": "Episode"
+      },
+      "number": "Number",
+      "title": "Title",
+      "rating": "Rating",
+      "downloadlink": "Downloadlink",
+      "streaminglink": "Streaminglink",
+      "actor": "Actor",
+      "telenovela": "Telenovela"
+    }
+  }
+}
