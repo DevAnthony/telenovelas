@@ -1,0 +1,60 @@
+/**
+ * Telenovela entity.
+ * @author CNote.
+ */
+entity Telenovela {
+	title String required,
+	summary TextBlob,
+    rating Integer,
+    year Integer,
+    country String maxlength(15),
+    playlist String maxlength(2048),
+    thumbnail String maxlength(2048),
+    poster String maxlength(2048),
+    background String maxlength(2048)
+}
+
+/**
+ * Episode entity.
+ * @author CNote.
+ */
+entity Episode {
+	number Integer required,
+    title String,
+    rating Integer,
+    downloadlink String maxlength(2048),
+    streaminglink String maxlength(2048)
+}
+
+/**
+ * Actor entity.
+ * @author CNote.
+ */
+entity Actor {
+	firstname String required,
+	middlename String,
+	lastname String required,
+    profilepicture String maxlength(2048), 
+    biolink String maxlength(2048)
+}
+
+    
+relationship ManyToMany {
+	Telenovela{Actor(name)} to Actor{telenovela},
+	Episode{Actor(name)} to Actor{episode}
+}
+
+
+relationship OneToMany {
+    Telenovela{episode} to Episode{telenovela}
+}
+
+
+
+// Set pagination options
+paginate Telenovela, Episode, Actor with infinite-scroll
+
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
